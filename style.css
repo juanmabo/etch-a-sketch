@@ -1,0 +1,121 @@
+/* RESET */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+    margin: 0;
+}
+
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* GENERAL STYLES */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #424C58;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+.title {
+    text-align: center;
+    color: #EEF2F5;
+    padding: 10px;
+}
+
+/* MAIN */
+.button-div {
+    text-align: center;
+    margin: 20px 0;
+}
+
+button {
+    border: none;
+    border-radius: 4px;
+    padding: 8px 15px;
+    background-color: #AFB7C2;
+    color: #424C58;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #EEF2F5;
+}
+
+/* Etch-A-Sketch */
+.grid-row-div {
+    display: flex;
+    justify-content: center;
+}
+
+.grid-div {
+    border: 1px solid #424C58;
+    width: 20px;
+    height: 20px;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: #EEF2F5;
+}
+
+/* FOOTER */
+.footer p {
+    color: #EEF2F5;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px
+}
